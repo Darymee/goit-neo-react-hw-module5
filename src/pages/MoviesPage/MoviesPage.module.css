@@ -1,0 +1,9 @@
+.section {
+  padding-top: 6px;
+}
+
+.empty {
+  margin-top: 18px;
+  color: var(--muted);
+  text-align: center;
+}

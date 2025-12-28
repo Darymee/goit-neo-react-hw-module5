@@ -1,0 +1,21 @@
+.page {
+  padding-top: 6px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  margin-bottom: 14px;
+}
+
+.subtitle {
+  margin-top: 2px;
+  color: var(--muted);
+}
+
+.empty {
+  margin-top: 18px;
+  color: var(--muted);
+  text-align: center;
+}

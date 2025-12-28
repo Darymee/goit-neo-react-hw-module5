@@ -1,0 +1,142 @@
+.goBackLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+  padding: 8px 12px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: var(--surface2);
+  color: var(--muted);
+  font-weight: 800;
+  transition: background 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.goBackLink:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  transform: translateY(-1px);
+}
+
+.goBackLink svg {
+  width: 20px;
+  height: 20px;
+}
+
+.movieDetails {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 20px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+
+.posterContainer {
+  width: min(320px, 100%);
+}
+
+.poster {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  margin-bottom: 12px;
+}
+
+.infoItem {
+  margin-bottom: 10px;
+}
+
+.infoValue {
+  color: var(--muted);
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.infoDescription {
+  color: var(--text);
+  font-weight: 800;
+}
+
+.low {
+  color: var(--danger);
+}
+
+.mid {
+  color: var(--warning);
+}
+
+.high {
+  color: var(--ok);
+}
+
+.infoTitle {
+  margin: 16px 0 10px;
+  font-weight: 900;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+}
+
+.additionalInfoList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+}
+
+.additionalInfoItem {
+  list-style: none;
+}
+
+.additionalInfoLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--muted);
+  font-weight: 800;
+  font-size: 13px;
+  transition: background 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+.additionalInfoLink:hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.additionalInfoLink.active {
+  color: var(--text);
+  border-color: rgba(124, 92, 255, 0.35);
+  background: rgba(124, 92, 255, 0.22);
+}
+
+@media (min-width: 780px) {
+  .movieDetails {
+    grid-template-columns: 360px 1fr;
+    align-items: start;
+    padding: 18px;
+  }
+
+  .posterContainer {
+    width: 360px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+}

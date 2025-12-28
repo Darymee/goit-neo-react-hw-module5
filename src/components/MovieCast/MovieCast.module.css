@@ -1,0 +1,44 @@
+.castList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.castItem {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 18px;
+  overflow: hidden;
+  padding: 12px;
+}
+
+.castImage {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 10px;
+}
+
+.castText {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.castText:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.castText span {
+  color: var(--text);
+  font-weight: 800;
+}
+
+.empty {
+  margin-top: 16px;
+  color: var(--muted);
+  text-align: center;
+}
